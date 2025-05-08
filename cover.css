@@ -1,6 +1,8 @@
 body {
     /* background-image: url('bahan/background.jpg'); */
     /* background-color: aliceblue; */
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,26 +11,26 @@ body {
 }
 #undangan { 
     display: none; margin-top: 20px; 
-    }
+}
 
 #undangan.show { 
     display: block; 
-    }
+}
 
 input, button { 
     padding: 8px 12px; font-size: 1rem; 
-    }
+}
 button { 
     border-radius: 10px;
     cursor: pointer; 
-    }
+}
 
 img {
     margin-top: 25%;
     margin-left: 45px;
     width: 300px;
     height: auto; /* biar proporsional, nggak gepeng */
-  }
+}
 
 a {
     text-decoration: none;      /* hilangkan garis bawah default */
@@ -43,7 +45,7 @@ a {
 .buka {
     text-decoration: none;
     color: rgb(255, 255, 255);
-  }
+}
   
 .buka:hover {
     background: linear-gradient(to bottom, #1c2c36, #0f1a20);
@@ -54,10 +56,11 @@ a {
     background-image: url(bahan/background\ \(1\).jpg);
     /* background-color: rgb(15, 130, 138); */
     color: black;
-    padding: 20px;
-    height: 775px;
-    width: 415px;
     border-radius: 10px;
+    padding: 20px;
+    height: 850px;
+    width: 415px;
+    margin-bottom: 10px;
 }
 
 .Masukkan {
@@ -96,15 +99,15 @@ a {
       opacity: 1;
       transform: translateY(0);
     }
-  }
+}
   
-  .text,
-  .bungkus,
-  .gambar {
+.text,
+.bungkus,
+.gambar {
     animation: fadeInUp 0.9s ease-out;
-  }
+}
 
-  @keyframes fadeOutUp {
+@keyframes fadeOutUp {
     from {
       opacity: 1;
       transform: translateY(0);
@@ -113,11 +116,10 @@ a {
       opacity: 0;
       transform: translateY(-20px);
     }
-  }
+}
   
-  .{
+.{
     animation: fadeOutUp 0.5s ease-out forwards;
-  }
- 
+}
 
-  
+
