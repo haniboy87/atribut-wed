@@ -118,5 +118,39 @@ a {
   .{
     animation: fadeOutUp 0.5s ease-out forwards;
   }
-  
+  /* Responsive untuk layar kecil, misal HP dengan lebar <= 480px */
+@media screen and (max-width: 480px) {
+    .border {
+        width: 90vw;
+        height: auto;
+        padding: 15px;
+    }
+
+    .Masukkan {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .buka {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .bungkus {
+        width: 90vw;
+        height: auto;
+        margin-top: 20%;
+        padding: 10px;
+    }
+
+    img {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
   
