@@ -36,6 +36,57 @@ function bukaUndangan() {
     return;
   }
 
+  // Deteksi kata tidak sopan
+  const kataTerlarang = ["anjing",
+  "babi",
+  "bangsat",
+  "tolol",
+  "goblok",
+  "kontol",
+  "memek",
+  "ngentot",
+  "asu",
+  "tai",
+  "sinting",
+  "idiot",
+  "kampret",
+  "jancuk",
+  "jembut",
+  "pepek",
+  "pler",
+  "ngentod",
+  "bencong",
+  "banci",
+  "lonte",
+  "pelacur",
+  "perek",
+  "sange",
+  "bejat",
+  "brengsek",
+  "sialan",
+  "keparat",
+  "bokep",
+  "bajingan",
+  "setan",
+  "iblis",
+  "anjir",      // kadang digunakan dalam konteks kasar juga
+  "ngaceng",
+  "anjiong",
+  "oyang",
+  "omang",
+  "pantek","pantex","panteq",
+  "cunek","cunex","cuneq",
+  "galodiu","galodiuw"
+];
+  const namaLower = nama.toLowerCase();
+
+  for (let kata of kataTerlarang) {
+    if (namaLower.includes(kata)) {
+      alert("Ups! Nama yang kamu masukkan mengandung kata tidak pantas 😳");
+      return;
+    }
+  }
+
   // Format huruf awal tiap kata jadi kapital
   const namaFormat = nama
     .toLowerCase()
